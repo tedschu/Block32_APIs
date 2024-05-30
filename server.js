@@ -11,7 +11,7 @@ app.get(baseQuery, (req, res) => {
   });
 });
 
-// app.use(baseQuery + "flavors", require("./flavors"));
+app.use(baseQuery + "flavors", require("./flavors"));
 
 app.listen(8080, () => {
   console.log("app is running at port 8080.");
